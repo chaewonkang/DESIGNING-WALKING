@@ -54,6 +54,10 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 900;
 }
 
+.title {
+  padding-bottom: 0.7em;
+}
+
 a {
   font-weight: bolder;
   color: #fff;
@@ -223,13 +227,21 @@ a:active {
   vertical-align: middle;
 }
 
+footer {
+  position: fixed;
+  height: 50px;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  background-color: #000;
+}
+
 .footer-inner {
-  font-size: 12px;
   display: grid;
+  font-size: 12px;
   grid-template-columns: 70% 1fr;
   box-sizing: border-box;
   padding-top: 12px;
-  padding-bottom: 12px;
 }
 
 .footer-inner div:first-child {
@@ -238,8 +250,8 @@ a:active {
 
 .content-item-text {
   margin: 0 20px 0 20px;
-  padding-bottom: 1em;
-  padding-top: 1em;
+  padding-bottom: 2em;
+  padding-top: 2em;
 }
 
 .content-item-text p {
@@ -287,7 +299,6 @@ a:active {
 }
 .content-item-text-grid h2 {
   color: #fff;
-  border-top: 2px solid #fff;
   padding-top: 0.5em;
   margin-bottom: 0.5em;
   line-height: 1.5em;
@@ -303,6 +314,13 @@ a:active {
   list-style: none;
   padding-left: 0;
   font-size: 1.2em;
+}
+
+.content-item-text-grid-list ul li {
+  list-style: none;
+  padding-left: 0;
+  font-size: 0.7em;
+  line-height: 1.8em;
 }
 
 .content-item-text-grid-box a {
@@ -444,18 +462,19 @@ table#references-table th, table#references-table th, table#references-table td,
 
 #footer {
   color: #fff;
+  background-color: #000;
   padding-bottom: 0px;
+  border-top: 2px solid #fff;
   width: 100%;
   top: 0;
-  border-top: 2px solid #fff;
   left: 0;
   right: 0;
 }
 
 #letters {
   width: 80%;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 3em;
+  margin-bottom: 3em;
   margin-right: auto;
   margin-left: auto;
 }
@@ -506,6 +525,7 @@ table#references-table th, table#references-table th, table#references-table td,
     display: grid;
     grid-template-columns: 400px 1fr;
     line-height: normal;
+    background-color: #000;
   }
 
   #footer__social {
@@ -679,8 +699,8 @@ table#references-table th, table#references-table th, table#references-table td,
     width: 100%;
     white-space: nowrap;
     overflow: hidden;
-    border-top: 2px solid #fff;
     padding-top: 1em;
+    padding-bottom: 1em;
 }
 
 #sliding-text p {
