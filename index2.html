@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>DESIGNING WALKING</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <header class="Header">
+    <div class="Header-inner" data-nc-group="top" data-nc-collapse>
+      <div data-nc-container="top-center">
+        <nav class="Header-nav" data-nc-element="primary-nav" data-content-field="navigation">
+          <div class="Header-nav-inner">
+            <div><a href="index.html" class="Header-nav-item" data-test="template-nav">DESIGNING WALKING</a></div>
+            <div><a href="index2.html" class="Header-nav-item" data-test="template-nav">About</a></div>
+            <div><a href="index3.html" class="Header-nav-item" data-test="template-nav">Others</a></div>
+          </div>
+        </nav>
+      </div>
+  </header>
+  <div id="wrapper">
+    <div class="content-items">
+          <div class="slideshow-container">
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+              <img src="img/img1.jpg">
+            </div>
+
+            <div class="mySlides fade">
+              <img src="img/img2.jpg">
+            </div>
+
+            <div class="mySlides fade">
+              <img src="img/img3.jpg">
+            </div>
+
+            <div class="mySlides fade">
+              <img src="img/img4.jpg">
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          <br>
+        </div>
+  </div>
+      <div class="content-item-wrapper">
+        <div class="content-item-text">
+          <h2>ABOUT THE PROJECT</h2>
+          <div class="content-item-text-about">
+          <div>In San Francisco Book Co., a small, cozy used bookstore near Luxembourg Garden in Paris, I once found a book ‘An attempt at Exhausting a city’ by Georges Perec. In this book, George Perec stayed at Saint-Sulpice, and observes things and people. And he simply writes the list of things he found down.</div>
+          <div id="quote">
+          “My intention in the pages that follow was to describe the rest: that which is generally not taken note of, that which is not noticed, that which has no importance: what happens when nothing happens other than the weather, people, cars, and clouds.”[1]</div>
+          <div>
+          Some people say, “Paris is really small. A week is enough to fully explore the city.” But I wonder what do they think they could see in this city. Living in Paris, and create my own souvenirs from walking around the city. My walking happens spontaneously, intuitively, accidentally or incidentally. My walking, physical movements, things I found and heard of city, conversation with people who I walked with, my thoughts are all inside of this letters.
+        </div>
+        <div>
+          Walking around the city is usually being carried out in the state of unconsciousness. When we start considering the act of walking as super-conscious work, this process takes us deep into a world of infinite possibilities. In this state, we start feeling free to explore the surroundings what we frequently forget to. We begin an experiment in the city and feel how the world works with our subconsciousness. DESIGNING WALKING consists of alphabet letters made by walking around the city. Each alphabet letter is filled with one's own feelings, thoughts, talks with companions, airs, bird sounds, and images, establishing itself fully-formed souvenirs evoked by the physical movements.
+        </div>
+        <div class="content-item-text-grid">
+        <div>
+          <h2>CONTACT</h2>
+          <p>
+            chaewon.kang@paris.edu<br>
+            +33.0.76.21.83.34
+          </p>
+        </div>
+
+        <div class="content-item-text-grid-box">
+          <h2>VISIT</h2>
+          <div class="content-item-text-grid-list">
+          <ul>
+            <li><h3><a href="http://www.instagram.com/standingatthemargin" target="_blank">Instagram</a></h3></li>
+            <li><h3><a href="https://www.github.com/chaewonkang" target="_blank">Github</a></h3></li>
+            <li><h3><a href="https://standingatthemargin.tumblr.com" target="_blank">Website</a></h3></li>
+            <li><h3><a href="https://www.linkedin.com/in/chaewon-kang-250334183/" target="_blank">LinkedIn</a></h3></li>
+          </ul>
+          </div>
+        </div>
+      </div>
+      <div>
+      <div id="sliding-text">
+        <p id="random-text"></p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<footer>
+  <div id="footer">
+    <div class="footer-inner">
+      <div id="copyright">
+        All Rights Reserved Ⓒ 2019 <a href="https://www.chaewonkang.com">Chaewon Kang</a>
+      </div>
+      <div>
+        <ul id="footer__social">
+          <li><a href="https://www.facebook.com/chaewon.kang" target="_blank"  class="fa fa-facebook"></a></li>
+          <li><a href="https://www.instagram.com/chaewon.kang" target="_blank"  class="fa fa-instagram"></a></li>
+          <li><a href="https://www.github.com/chaewonkang" target="_blank" class="fa fa-github"></a></li>
+          <li><a href="#" target="_blank"  class="fa fa-linkedin"></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+    <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+    }
+
+    var target = document.getElementById('random-text');
+    function newTitle() {
+      target.innerHTML = '<a href="https://www.instagram.com/chaewon.kang"; target="_blank";>👣 CLICK HERE TO DOWNLOAD FONT 👣 </a>';
+    }
+    newTitle();
+    </script>
+  </div>
+  </body>
+</html>
