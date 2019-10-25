@@ -688,7 +688,7 @@ table#references-table th, table#references-table th, table#references-table td,
 
 #footer__social li {
   list-style: none;
-  display: inline-block;
+  display: inline;
   padding-left: 10px;
   font-size: 15px;
   float: right;
